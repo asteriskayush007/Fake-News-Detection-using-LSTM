@@ -1,0 +1,9 @@
+*.ipynb_checkpoints
+__pycache__/
+*.log
+*.DS_Store
+*.csv
+*.h5
+*.keras
+*.pkl
+*.txt
