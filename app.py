@@ -6,6 +6,14 @@ import pickle
 import re
 import string
 
+import subprocess
+import os
+
+# Run download_assets.py to get Fake.csv and True.csv if not already present
+if not (os.path.exists("Fake.csv") and os.path.exists("True.csv")):
+    subprocess.run(["python", "download_assets.py"])
+
+
 # Load model and tokenizer
 model = load_model("lstm_fake_news_model.keras")
 tokenizer = pickle.load(open("tokenizer.pkl", "rb"))
