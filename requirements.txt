@@ -1,6 +1,9 @@
 streamlit
-tensorflow
 numpy
-pandas
+tensorflow
+keras
 scikit-learn
-pickle-mixin
+pandas
+matplotlib
+seaborn
+gdown
