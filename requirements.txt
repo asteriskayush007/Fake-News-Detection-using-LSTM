@@ -1,9 +1,10 @@
-streamlit
-numpy
-tensorflow
 keras
-scikit-learn
-pandas
 matplotlib
 seaborn
 gdown
+streamlit
+tensorflow
+numpy
+pandas
+scikit-learn
+pickle-mixin
