@@ -1,84 +1,84 @@
-# 📰 Fake News Detection (LSTM)
+# 📰 Fake News Detection Using Machine Learning
 
-A deep learning model using LSTM trained on the Kaggle Fake & Real News Dataset with 97%+ accuracy. Hosted using Streamlit.
+A Streamlit-based web application that detects whether a news article is **Fake** or **Real** using Natural Language Processing and a Machine Learning classifier (PassiveAggressiveClassifier).
 
-## 📦 Features
-- LSTM text classifier using TensorFlow/Keras
-- Cleaned & preprocessed dataset
-- TF-IDF removed for deep learning
-- UI built in Streamlit
-- Realtime confidence score display
+---
 
-## 🚀 How to Run
+## 📌 Project Overview
+
+Fake news has become a significant issue in the modern digital world. This project aims to classify news articles as either **real** or **fake** using text classification techniques. The solution uses:
+
+- **TF-IDF vectorization** for feature extraction.
+- **PassiveAggressiveClassifier** for model training.
+- **Streamlit** for deploying the app.
+
+---
+
+## 📁 Dataset
+
+The dataset used is a combination of:
+
+- [`Fake.csv`](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset)
+- [`True.csv`](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset)
+
+Each file contains news articles labeled as either fake or real.
+
+---
+
+## 🧠 Machine Learning Model
+
+- **Vectorizer**: TF-IDF (Term Frequency-Inverse Document Frequency)
+- **Classifier**: Passive Aggressive Classifier (fast, memory-efficient for binary classification)
+
+The model is trained on a balanced dataset and achieves high accuracy on unseen data.
+
+---
+
+## 🛠 Features
+
+✅ Classifies news as **Fake** or **Real**  
+✅ Interactive Streamlit UI  
+✅ Clean and intuitive layout  
+✅ Pretrained model loaded for instant predictions  
+✅ Real-time feedback
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/fake-news-detection-using-ml.git
+cd fake-news-detection-using-ml
+```
+## Install dependencies:
+
 ```bash
 pip install -r requirements.txt
+```
+## Run the app:
+
+```bash
 streamlit run app.py
+```
 
+## 🖼 App UI Preview
 
-📁 Then ZIP your folder for submission.
+![Fake News Detection App Preview](SS1.png)
+![Fake News Detection App Preview](SS2.png)
 
-## 📥 Download Dataset Files from Google Drive
+## 📈 Results
+# Accuracy: ~97%
 
-To download the required datasets (Fake & Real News CSV):
+## Model: PassiveAggressiveClassifier
 
+# Vectorization: TF-IDF
+
+###👨‍💻 Author
 ```bash
-pip install gdown
+Made with ❤️ by Ayushmaan Singh Yadav
+```
 
-gdown --id 1jwCFUHKX2hIv50V6BBoxjym8AWgc2j6Q -O Fake.csv
-gdown --id 1b4Izukx_Sfheu6pbdycaM6ByUUQt2YGB -O True.csv
-
-
-
----
-
-### ✅ Now Run This on Terminal Once
-
-```bash
-pip install gdown
-python download_assets.py
-
-
----
-
-### ✅ **Step 4: Generate PDF Report**
-
-Use **Jupyter Notebook + nbconvert** or **Word** + Export as PDF.
-
-Sections to include:
-- Title Page
-- Objective
-- Dataset Description
-- Data Cleaning
-- LSTM Architecture Summary
-- Model Performance
-- UI Deployment Screenshots
-- Conclusion & Future Work
-
-📄 Or I can generate a `.docx` or `.pdf` version for you if needed.
-
----
-
-### ✅ **Step 5: LinkedIn / Portfolio Post**
-
-Here’s a **LinkedIn-style summary**:
-
-> 🚀 Just completed an exciting deep learning project: **Fake News Detection using LSTM**!
->
-> 🔍 Trained on 44,000+ articles from real-world datasets (Kaggle), the model achieved over **97.9% accuracy** using an LSTM neural network.
->
-> 💻 Deployed a clean and interactive **Streamlit web app** that detects whether a news article is *real* or *fake* — complete with confidence scores and live predictions.
->
-> 🧠 Key Highlights:
-> - Clean NLP preprocessing pipeline
-> - LSTM + Keras-based model
-> - Hosted via Streamlit (no backend required!)
-> - Dataset: [Fake & Real News – Kaggle](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset)
->
-> 🔗 [Live Demo Link]  
-> 🗂️ [GitHub Repo Link]
->
-> #FakeNewsDetection #DeepLearning #NLP #Kaggle #Streamlit #LSTM #MachineLearning #PortfolioProject
-
----
-
-Let me know which part you'd like help generating right now (e.g., the PDF report, LinkedIn post graphics, or the Streamlit deployment files).
+🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
